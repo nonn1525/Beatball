@@ -11,11 +11,39 @@
   padding:0;
 }
 
-.border {
+.border0 {
   width: 1000px;
   border-bottom: 1px solid white;
   position: absolute;
   top: 94%;
+}
+.border1 {
+  width: 100px;
+  border-bottom: 1px solid white;
+  position: absolute;
+  top: 463px;
+  margin-left: 120px;
+}
+.border2 {
+  width: 100px;
+  border-bottom: 1px solid white;
+  position: absolute;
+  top: 363px;
+  margin-left: 120px;
+}
+.border3 {
+  width: 100px;
+  border-bottom: 1px solid white;
+  position: absolute;
+  top: 263px;
+  margin-left: 120px;
+}
+.border4 {
+  width: 100px;
+  border-bottom: 1px solid white;
+  position: absolute;
+  top: 163px;
+  margin-left: 120px;
 }
 
 #ball {
@@ -32,16 +60,16 @@
   animation: grow ease-in-out 0.5s infinite;
 }
 .animate1 {
-  animation: jump1 ease 1.0s;
+  animation: jump1 ease 1.2s;
 }
 .animate2 {
-  animation: jump2 ease 1.0s;
+  animation: jump2 ease 1.2s;
 }
 .animate3 {
-  animation: jump3 ease 1.0s;
+  animation: jump3 ease 1.2s;
 }
 .animate4 {
-  animation: jump4 ease 1.0s;
+  animation: jump4 ease 1.2s;
 }
   @keyframes grow
   {
@@ -57,17 +85,17 @@
  @keyframes jump1 {
    0%{top: 523px;}
    50%{top: 423px;}
-   100%{top: 523px;}
+   100%{top: 623px;}
  }
  @keyframes jump2 {
    0%{top: 423px;}
    50%{top: 323px;}
-   100%{top: 423px;}
+   100%{top: 523px;}
  }
  @keyframes jump3 {
    0%{top: 323px;}
    50%{top: 223px;}
-   100%{top: 323px;}
+   100%{top: 423px;}
  }
  @keyframes jump4 {
    0%{top: 223px;}

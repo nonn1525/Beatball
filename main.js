@@ -2,39 +2,42 @@ let ball = document.getElementById("ball");
 let field = document.getElementById("field");
 
 function jump() {
-  ball.classList.add("animate");
   const wait = function (seconds) {
     return new Promise(function (resolve) {
       setTimeout(resolve, seconds * 500);
     });
   };
   
+  ball.classList.remove("animate4")
   
-  wait(0.5)// 待って欲しい○秒書く
+  wait(1)// 待って欲しい○秒書く
     .then(() => {
      // ▼▼挙動を書く▼▼
      ball.classList.add("animate1")
      // ▲▲挙動を書く▲▲ 
-      return wait(0.5); //待って欲しい○秒書く
+      return wait(1); //待って欲しい○秒書く
     })
     .then(() => {
       // ▼▼挙動を書く▼▼
       ball.classList.add("animate2")
       ball.classList.remove("animate1")
       // ▲▲挙動を書く▲▲ 
-      return wait(0.5); //待って欲しい○秒書く
+      return wait(1); //待って欲しい○秒書く
     })
     .then(() => {
       // ▼▼挙動を書く▼▼
       ball.classList.add("animate3")
       ball.classList.remove("animate2")
       // ▲▲挙動を書く▲▲
-      return wait(0.5); //待って欲しい○秒書く
+      return wait(1); //待って欲しい○秒書く
     })
     .then(() => {
       // ▼▼挙動を書く▼▼
       ball.classList.add("animate4")
       ball.classList.remove("animate3")
+      setTimeout(function(){
+        ball.classList.remove("animate4")
+      }, 1200);
       // ▲▲挙動を書く▲▲
     });
     setTimeout(function(){
