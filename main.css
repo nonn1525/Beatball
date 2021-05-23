@@ -60,16 +60,24 @@
   animation: grow ease-in-out 0.5s infinite;
 }
 .animate1 {
-  animation: jump1 ease 1.2s;
+  animation: 
+    jump1 ease 1.2s,
+    grow ease-in-out 0.5s infinite;
 }
 .animate2 {
-  animation: jump2 ease 1.2s;
+  animation: 
+    jump2 ease 1.2s,
+    grow ease-in-out 0.5s infinite;
 }
 .animate3 {
-  animation: jump3 ease 1.2s;
+  animation: 
+    jump3 ease 1.2s,
+    grow ease-in-out 0.5s infinite;
 }
 .animate4 {
-  animation: jump4 ease 1.2s;
+  animation: 
+    jump4 ease 1.2s,
+    grow ease-in-out 0.5s infinite;
 }
   @keyframes grow
   {
